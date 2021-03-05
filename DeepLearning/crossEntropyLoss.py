@@ -1,0 +1,9 @@
+import numpy as np
+
+
+def crossEntropyLoss(y_true, y_pred):
+    return -np.sum(y_true * np.log(y_pred))
+
+
+def crossEntropyGrad(y_true, y_pred):
+    return -(y_true / (y_pred + 1e-9))
