@@ -8,7 +8,7 @@ def Layer_initializations(layer_dim):
     Length = len(layer_dim)
 
     for i in range(1, Length):
-        Layers.append(Layer(layer_dim[i], layer_dim[i - 1]))
+        Layers.append(Layer(layer_dim[i - 1],layer_dim[i]))
 
     return Layers
 

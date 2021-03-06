@@ -8,6 +8,6 @@ def backwardPropagation(da_cur, x, NoOfLayers, Layers):
         a_prev = Layers[i - 1].a
         da_cur = Layers[i].backward(da_cur, h_prev, a_prev, 'sigmoid')
 
-    Layers[0].w = np.dot(da_cur, x.T)
+    Layers[0].w = np.dot(da_cur, x)
     Layers[0].db = da_cur
     return Layers

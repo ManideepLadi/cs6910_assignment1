@@ -1,6 +1,6 @@
 
 
-def     feedForward(x, Layers):
+def  feedForward(x, Layers):
     Length = len(Layers)
     h_prev = x
     # For 1 to N-1 layers, apply sigmoid activation function
